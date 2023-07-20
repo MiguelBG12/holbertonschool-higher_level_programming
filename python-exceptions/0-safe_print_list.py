@@ -4,7 +4,7 @@ def safe_print_list(my_list=[], x=0):
 
     try:
         for i in range(x):
-            print(my_list[i], end=' ')
+            print(my_list[i], end='')
             num_printed += 1
     except IndexError:
         pass
@@ -14,4 +14,4 @@ def safe_print_list(my_list=[], x=0):
 
 my_list = [1, 2, 3, 4, 5]
 x = 3
-print("Number of elements printed:", safe_print_list(my_list, x)) 
+print("Number of elements printed:", safe_print_list(my_list, x))
