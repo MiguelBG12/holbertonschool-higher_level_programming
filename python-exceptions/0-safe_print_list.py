@@ -11,7 +11,3 @@ def safe_print_list(my_list=[], x=0):
 
     print()
     return num_printed
-
-my_list = [1, 2, 3, 4, 5]
-x = 3
-print("Number of elements printed:", safe_print_list(my_list, x))
