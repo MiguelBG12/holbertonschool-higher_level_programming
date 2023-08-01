@@ -17,7 +17,7 @@ class Student:
             new_dict = {}
             for k in self.__dict__:
                 for k2 in attrs:
-                     if k == k2:
+                    if k == k2:
                         new_dict[k] = self.__dict__[k]
             return new_dict
         else:
