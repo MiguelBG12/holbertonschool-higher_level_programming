@@ -19,15 +19,15 @@ class Student:
                 for k2 in attrs:
                     if k == k2:
                         new_dict[k] = self.__dict__[k]
-                    return new_dict
-                else:
-                    return self.__dict__
+            return new_dict
+        else:
+            return self.__dict__
 
-        def reload_from_json(self, json):
-            for k in json:
-                if k == "first_name":
-                    self.first_name = json[k]
-                if k == "last_name":
-                    self.last_name = json[k]
-                if k == "age":
-                    self.age = json[k]
+    def reload_from_json(self, json):
+        for k in json:
+            if k == "first_name":
+                self.first_name = json[k]
+            if k == "last_name":
+                self.last_name = json[k]
+            if k == "age":
+                self.age = json[k]
