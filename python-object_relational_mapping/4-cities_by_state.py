@@ -31,5 +31,5 @@ if __name__ == "__main__":
         print("Usage: python script.py <username> <password> <database_name>")
         sys.exit(1)
 
-                                                                                                username, password, database_name = sys.argv[1], sys.argv[2], sys.argv[3]
+    username, password, database_name = sys.argv[1], sys.argv[2], sys.argv[3]
     list_cities(username, password, database_name)
