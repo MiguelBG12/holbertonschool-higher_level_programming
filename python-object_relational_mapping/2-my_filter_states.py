@@ -1,8 +1,5 @@
 #!/usr/bin/python3
-"""
-Script to list all states that matches the argument 4.
-Usage: script_name.py <username> <password> <database> <state_name>
-"""
+""" Lists all states that matches the argument 4"""
 import sys
 import MySQLdb
 
