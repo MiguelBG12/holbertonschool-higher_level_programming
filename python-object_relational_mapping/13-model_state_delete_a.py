@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 Script to delete all State objects with a name containing the letter a
-""" 
+"""
 
 if __name__ == '__main__':
 
