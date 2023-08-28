@@ -1,5 +1,28 @@
 #!/usr/bin/python3
-""" Lists all states that matches the argument 4"""
+"""
+Script to list all states that match a given argument.
+
+This script takes a state name as an argument and retrieves all states
+from a MySQL database that match the provided state name.
+
+Usage:
+    script_name.py <username> <password> <database> <state_name>
+
+Arguments:
+    <username>: The username for the MySQL database.
+    <password>: The password for the MySQL database.
+    <database>: The name of the MySQL database to connect to.
+    <state_name>: The name of the state to search for.
+
+Requirements:
+    - Python 3.x
+    - MySQLdb library
+
+Example:
+    To search for states with the name "California" in the database "states_db":
+    $ script_name.py user pass states_db California
+"""
+
 import sys
 import MySQLdb
 
@@ -21,13 +44,11 @@ if __name__ == "__main__":
             user=username,
             passwd=password,
             db=database_name
-<<<<<<< HEAD
-            )
-        cur = conn.cursor()
-        query = "SELECT * FROM states WHERE name = %s ORDER BY id ASC"
-=======
         )
         cur = conn.cursor()
+<<<<<<< HEAD
+        query = "SELECT * FROM states WHERE name = %s ORDER BY id ASC"
+=======
         query = "SELECT * FROM states WHERE BINARY name = %s ORDER BY id ASC"
 >>>>>>> aacb4d93a2c3db63b9dff5b414be9bc117a2d32d
         cur.execute(query, (state_name,))
