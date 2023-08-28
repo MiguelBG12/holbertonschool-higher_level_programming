@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""Script to list all State objects that contain the letter a from the database"""
+"""
+Script to list all State objects that contain the letter a from the database
+"""
 
 if __name__ == '__main__':
 
