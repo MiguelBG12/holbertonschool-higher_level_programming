@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""Script to change the name of a State object from the database hbtn_0e_6_usa"""
+"""
+Script to change the name of a State object from the database hbtn_0e_6_usa
+"""
 
 if __name__ == '__main__':
 
