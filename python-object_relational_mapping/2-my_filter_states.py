@@ -19,7 +19,8 @@ Requirements:
     - MySQLdb library
 
 Example:
-    To search for states with the name "California" in the database "states_db":
+    To search for states with the name "California" in the
+    database "states_db":
     $ script_name.py user pass states_db California
 """
 
