@@ -9,7 +9,7 @@ if __name__ == '__main__':
     db = sys.argv[3]
     HOST = 'localhost'
 
-    b = MySQLdb.connect(host=HOST, user=user, passwd=passwd, db=db, port=3306)
+    db = MySQLdb.connect(host=HOST, user=user, passwd=passwd, db=db, port=3306)
 
     pointer = db.cursor()
     query = ("SELECT id, name FROM states \
