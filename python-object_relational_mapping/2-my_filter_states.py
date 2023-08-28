@@ -46,11 +46,7 @@ if __name__ == "__main__":
             db=database_name
         )
         cur = conn.cursor()
-<<<<<<< HEAD
-        query = "SELECT * FROM states WHERE name = %s ORDER BY id ASC"
-=======
         query = "SELECT * FROM states WHERE BINARY name = %s ORDER BY id ASC"
->>>>>>> aacb4d93a2c3db63b9dff5b414be9bc117a2d32d
         cur.execute(query, (state_name,))
         states = cur.fetchall()
         for state in states:
