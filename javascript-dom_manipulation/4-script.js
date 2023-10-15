@@ -1,3 +1,4 @@
+// Wait for the DOM to be fully loaded before attaching event listeners
 document.addEventListener('DOMContentLoaded', function () {
     // Select the element with id "add_item"
     const addItemButton = document.getElementById('add_item');
